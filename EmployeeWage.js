@@ -1,0 +1,5 @@
+
+        
+
+# EmployeeWage
+# EmployeeWage in JavaScript
