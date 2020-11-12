@@ -4,17 +4,14 @@ function empWage() {
     const isPartTime = 2;
     const empRatePerHrs = 20;
     let randomValue = Math.floor(Math.random() * 10) % 3;
-    if (randomValue == isFullTime) {
-        empHrs = 8;
-        return empRatePerHrs * empHrs;
-    }
-    else if(randomValue == isPartTime) {
-        empHrs = 4;
-        return empRatePerHrs * empHrs;
-    }
-    else {
-        empHrs = 0;
-        return empRatePerHrs * empHrs;
+    switch(randomValue) {
+        case 1:
+            empHrs = 8;
+            return empRatePerHrs * empHrs;     
+        case 2:
+            empHrs = 4;
+            return empRatePerHrs * empHrs;
+        default:
+          return 0;
     }
 }
-empWage();
